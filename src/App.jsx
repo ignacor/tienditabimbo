@@ -1,10 +1,6 @@
-import Navbarxd from './componentes/Global/NavBar'
-import Footer from './componentes/Global/Footer'
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Productos from './Pages/Productos'
-import Home from './Pages/Home'
-import Contacto from './Pages/Contacto'
-
+import Header from './componentes/Global/Header';
+import Footer from './componentes/Global/Footer';
+import ProductListContainer from './componentes/Productos/ProductListContainer';
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: "AIzaSyCAEQ-2RKHAJGyQCG00Z9WIJZ75f_v-COw",
@@ -21,16 +17,9 @@ function App() {
   return (
     <>
       <div>
-
-        <Router>
-        <Navbarxd/>
-        <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/Productos' element={<Productos/>}/>
-        <Route path='/Contacto' element={<Contacto/>}/>
-        </Routes>
+        <Header/>
+        <ProductListContainer/>
         <Footer/>
-        </Router>
       </div>
        
     </>

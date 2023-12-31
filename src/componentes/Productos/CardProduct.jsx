@@ -22,13 +22,10 @@ const CardProduct = ({ item }) => {
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={item.img} />
       <Card.Body>
-        <Card.Title>{item.name}</Card.Title>
+        <Card.Title>{item.name} ${item.priceP}</Card.Title>
         <Card.Text> </Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroup.Item>Peso: {item.peso}</ListGroup.Item>
-        <ListGroup.Item>Precio: ${item.priceP}</ListGroup.Item>
-        <ListGroup.Item>Precio Colaboradores: ${item.priceE}</ListGroup.Item>
       </ListGroup>
       
     </Card>

@@ -5,6 +5,7 @@ const  Footer = () => {
 
   const fondo = {
     backgroundColor:'skyblue',
+    marginTop: '15px'
   }
   const imgStyle = {
     width :'5%',
@@ -18,18 +19,13 @@ const  Footer = () => {
     color : 'black',
     textDecoretion :'none',
 }
-const redes = {
-  fontSize :'30px',
-  color : 'black',
-    textDecoretion :'none',
 
-}
 
   return (
-    <footer style={fondo}>
+    <footer id='pie' style={fondo}>
     <Stack direction="horizontal" gap={3}>
       <img style={imgStyle}  src="https://www.bimbo.com.ar/sites/all/themes/custom/bimbo/img/submenu_moreinfo_oso02-f_0.png" alt="" />
-      <div ><h1 style={color}>Tiendita Bimbo</h1></div>
+      <div ><h1 style={color}>Eme Distribuciones</h1></div>
       <div className="p-2 ms-auto "><h4>Contacto: +54 3574 40 1330</h4></div>
     
     </Stack>
